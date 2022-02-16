@@ -1,8 +1,8 @@
 {
   "name": "nucampsite",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Git and NPM",
+  "main": "index.html",
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
