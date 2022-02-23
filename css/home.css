@@ -1,0 +1,57 @@
+body{
+    font-family: 'Lobster', cursive;
+}
+
+h1,h2,h3{
+    font-family: 'Lobster', cursive;
+}
+
+h2{
+    color:#3046C5;
+}
+
+header h2{
+    color:dodgerblue;
+}
+
+footer{
+    background-image:linear-gradient(dodgerblue, white);
+    padding:20px 0;
+}
+
+.jumbotron-fluid {
+    margin:0;
+    padding: 4rem 2rem;
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+    background-color:firebrick;
+}
+
+.row-content{
+    padding:50px 0;
+    border-bottom:1px ridge;
+    min-height:200px;
+}
+
+
+.text-sm-right {
+    text-align: right!important;
+    position: relative;
+    right: 22%;
+}
+
+.col {
+    position: relative;
+    right: -5%;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+h1.logo {
+    position: relative;
+    right: 10%;
+}
