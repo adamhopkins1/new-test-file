@@ -70,12 +70,26 @@ footer{
 .col-4.col-sm-6.offset-1 {
     font-size: 20px;
 }
+
+textarea.form-control{
+        height: auto;
+        margin-left: 5px;
+    }
+
+label{
+        margin-left: 5px;
+    }
+
+button.btn.btn-primary {
+    margin-left:53%;
+    }
     </style>
 </head>
 
 <body>
 
     <header class="jumbotron jumbotron-fluid">
+        <img src="img\logo.png" class="img-fluid1">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -87,6 +101,7 @@ footer{
     </header>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <a class="navbar-brand" href="#"></a><img src="img\logo.png" class="img-fluid">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -135,13 +150,66 @@ footer{
                 <hr />
             </div>
             <div class="col-md-10">
-                Form goes here
-            </div>
-       </div>
-
-    </div>
-
-    <footer>
+                <form>
+                    <form class="form-horizontal" action="/action_page.php">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="fname">First Name:</label>
+                        <div class="col-sm-10">
+                            <input type="firstname" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="lname">Last Name:</label>
+                            <div class="col-sm-10">
+                            <input type="lastname" class="form-control"  id="lname" placeholder="Enter Last Name" name="lname">
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="contel">Contact Tel.</label>
+                            <div class="col-sm-10">
+                                <input type="contactnum" class="form-control" id="ctel" placeholder="Enter Telephone Number" name="ctel">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Email:</label>
+                            <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="col offset-sm-2">
+                                <h5>May We Contact You?</h5>
+                            </div>
+                        </div>
+                        <div class="col offset-sm-2">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">Yes</label>
+                        </div>
+                        </div>
+                        <div class="col offset-sm-2">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">No</label>
+                        </div>
+                        </div>
+                        </div>
+                        <br>
+                        <div class="col-sm-7">
+                        <div class="form-group">
+                            <label for="feedbackForm">Feel free to give us your Feedback! We really appreciate it.</label>
+                            <textarea class="form-control" id="feedbackForm" rows="5"></textarea>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-sm-5">
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                    </div>
+                    </form> 
+                <footer>
+        
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
@@ -150,7 +218,7 @@ footer{
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html">About</a></li>
                         <li><a href="#">Sites</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
